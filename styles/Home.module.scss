@@ -1,7 +1,7 @@
 $redColor: rgb(255, 28, 92);
 $blueColor: #1af0dc;
 $transparent: transparent;
-$fontFamilyLobster:"Lobster";
+$fontFamilyLobster:"Mulish";
 .transparentText {
   color: $transparent;
   background-clip: text;
@@ -31,7 +31,7 @@ $fontFamilyLobster:"Lobster";
 }
 .whoami {
   font-size: 3.2rem;
-  font-family: Lobster;
+  font-family: $fontFamilyLobster;
   text-align: center;
   @extend .transparentText;
   animation: changeGradient 3s ease-in infinite;
