@@ -8,9 +8,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdx-js/loader": "^0.15.4",
+    "@next/mdx": "^12.0.7",
+    "@react-three/drei": "^8.3.1",
+    "@react-three/fiber": "^7.0.24",
+    "animate.css": "^4.1.1",
+    "flat-color-icons": "^1.1.0",
     "next": "12.0.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "sass": "^1.45.2",
+    "three": "^0.136.0"
   },
   "devDependencies": {
     "@types/node": "17.0.5",

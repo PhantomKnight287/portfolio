@@ -1,0 +1,90 @@
+$redColor: rgb(255, 28, 92);
+$blueColor: #1af0dc;
+$transparent: transparent;
+$fontFamilyLobster: "Lobster";
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.head {
+  font-size: 1.7em;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif !important;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $blueColor;
+  & a:hover {
+    background-image: linear-gradient(
+      to right,
+      #feac5e,
+      #c779d0,
+      #4bc0c8,
+      #12c2e9,
+      #c471ed,
+      #f64f59
+    );
+    background-clip: text;
+    transition: color 0.5s ease-in;
+    color: transparent;
+  }
+}
+.heading {
+  @extend .head;
+  background-color: #12141f;
+  width: 100%;
+  color: $redColor;
+  padding: 2rem;
+  & h1 {
+    margin: 0;
+    line-height: initial;
+    padding: 0;
+  }
+}
+.button {
+  padding: 0.75rem 1rem;
+  background-color: $redColor;
+  outline: none;
+  border: none;
+  border-radius: 9px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+.projectDiv {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: 1000px;
+  padding-top: 1rem;
+  margin:1rem;
+}
+.h3 {
+  font-size: 2.2rem;
+  color: $redColor;
+  line-height: 1.5;
+  font-weight: 400;
+  padding:0;
+  margin:0;
+}
+.p {
+  color: $blueColor;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.otherProjectDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.otherH3{
+    @extend .h3;
+    color:$blueColor;
+}

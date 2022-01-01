@@ -1,0 +1,154 @@
+$redColor: rgb(255, 28, 92);
+$blueColor: #1af0dc;
+$transparent: transparent;
+$fontFamilyLobster:"Lobster";
+.transparentText {
+  color: $transparent;
+  background-clip: text;
+}
+.container {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.img {
+  border: 4px solid $redColor;
+  border-radius: 999px;
+  animation: 5s upAndDown ease-in infinite;
+}
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.whoami {
+  font-size: 3.2rem;
+  font-family: Lobster;
+  text-align: center;
+  @extend .transparentText;
+  animation: changeGradient 3s ease-in infinite;
+  background-image: linear-gradient(
+    to right,
+    #feac5e,
+    #c779d0,
+    #4bc0c8,
+    #12c2e9,
+    #c471ed,
+    #f64f59
+  );
+  background-size: 200% 200%;
+}
+@keyframes changeGradient {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+.detail {
+  font-size: 1.7em;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif !important;
+  font-weight: 400;
+  line-height: 1.5;
+  @extend .transparentText;
+  color: $blueColor;
+}
+.skills {
+  font-family: $fontFamilyLobster;
+  font-size: 3.4rem;
+  @extend .transparentText;
+  background-image: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #171928;
+  width: 50%;
+}
+.skillsContainerNested {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  & span {
+    font-size: 2rem;
+  }
+}
+
+.redText {
+  color: $redColor;
+}
+.blueText {
+  color: $blueColor;
+}
+.yellowText {
+  color: yellow;
+}
+.orangeText {
+  color: #e34c26;
+}
+
+.myProjects {
+  @extend .whoami;
+  background-image: linear-gradient(
+    to right,
+    #8360c3,
+    #2ebf91,
+    #2980b9,
+    #6dd5fa,
+    #ffffff
+  );
+  animation: projects 5s ease-in infinite;
+}
+@keyframes projects {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+}
+
+.projectP {
+  @extend .detail;
+  color: $redColor;
+}
+.button {
+  padding: 0.75rem 2rem;
+  background-color: $redColor;
+  outline: none;
+  border: none;
+  border-radius: 9px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.logoHolder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
