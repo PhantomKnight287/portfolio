@@ -19,11 +19,11 @@ export function Walls() {
     <>
       <mesh position={[0, 150, -150]} ref={wall1}>
         <planeBufferGeometry attach="geometry" args={[300,300]} />
-        <meshStandardMaterial attach="material"  />
+        <meshStandardMaterial attach="material" color={0xacddde} />
       </mesh>
       <mesh ref={wall2} position={[-150, 150, 0]} rotation={[0, -Math.PI / 2, 0]}>
         <planeBufferGeometry attach="geometry" args={[300,300]} />
-        <meshStandardMaterial attach="material"  />
+        <meshStandardMaterial attach="material" color={0xacddde}  />
       </mesh>
     </>
   );
